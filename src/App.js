@@ -1,4 +1,5 @@
 import * as React from 'react'
+import './App.css'
 
 export function App() {
   const [, forceRender] = React.useReducer((x) => x + 1, 0)
