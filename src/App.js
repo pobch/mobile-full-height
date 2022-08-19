@@ -11,11 +11,16 @@ export function App() {
             {document.documentElement.clientHeight}
           </div>
           <div>
+            documentElement.scrollWidth x Height: {document.documentElement.scrollWidth} x{' '}
+            {document.documentElement.scrollHeight}
+          </div>
+          <div>
             window.innerWidth x Height: {window.innerWidth} x {window.innerHeight}
           </div>
         </div>
         <div>
-          <input type="text" /> <button onClick={() => forceRender()}>Force Render</button>
+          <input type="text" onChange={() => forceRender()} />{' '}
+          <button onClick={() => forceRender()}>Force Render</button>
         </div>
       </div>
       <div>
@@ -25,11 +30,16 @@ export function App() {
             {document.documentElement.clientHeight}
           </div>
           <div>
+            documentElement.scrollWidth x Height: {document.documentElement.scrollWidth} x{' '}
+            {document.documentElement.scrollHeight}
+          </div>
+          <div>
             window.innerWidth x Height: {window.innerWidth} x {window.innerHeight}
           </div>
         </div>
         <div>
-          <input type="text" /> <button onClick={() => forceRender()}>Force Render</button>
+          <input type="text" onChange={() => forceRender()} />{' '}
+          <button onClick={() => forceRender()}>Force Render</button>
         </div>
       </div>
     </div>
